@@ -11,14 +11,13 @@ on:
 jobs:
   builddocker:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v2
-      
+
       - uses: mr-smithers-excellent/docker-build-push@v5.6
         name: Build & push Docker image
         with:
-          image: docker2706/itea
+          image: docker2706/github
           tags: v1, latest
           registry: registry.hub.docker.com
           username: ${{ secrets.DOCKER_USERNAME }}
