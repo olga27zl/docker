@@ -18,7 +18,7 @@ jobs:
       - uses: mr-smithers-excellent/docker-build-push@v5.6
         name: Build & push Docker image
         with:
-          image: docker2706/itea3
+          image: docker2706/itea
           tags: v1, latest
           registry: registry.hub.docker.com
           username: ${{ secrets.DOCKER_USERNAME }}
